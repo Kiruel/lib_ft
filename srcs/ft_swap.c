@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memset.c                                      :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:53:39 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:06:25 by etheodor         ###   ########.fr       */
+/*   Created: 2014/07/05 21:25:42 by etheodor          #+#    #+#             */
+/*   Updated: 2014/07/11 08:18:46 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
-
-int main()
+void	ft_swap(int *a, int *b)
 {
-	char *a;
+	int	c;
 
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = ft_memset(a, 110, 3);
-	ft_putstr(a);
-	ft_putchar('\n');
-	return (0);
+	c = 0;
+	c = *a;
+	*a = *b;
+	*b = c;
 }

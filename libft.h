@@ -9,19 +9,19 @@
 /*   Updated: 2014/11/03 15:38:21 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <fcntl.h>
-# include <sys/types.h>
-# include <sys/uio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <string.h>
 
-// Prototype :
 int				ft_strlen(char *str);
 void			ft_putchar(char c);
 void			ft_putstr(char *str);
 void			ft_putnbr(int nb);
-
+void			*ft_memset(void *b, int c, size_t len);
+void			ft_swap(int *a, int *b);
+void			ft_putnbr(int nb);
 #endif

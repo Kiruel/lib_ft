@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memset.c                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:53:39 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:06:25 by etheodor         ###   ########.fr       */
+/*   Created: 2014/07/10 12:12:04 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/03 15:05:56 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
+char	ft_putchar(char c);
 
-int main()
+void	ft_putstr(char *str)
 {
-	char *a;
-
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = ft_memset(a, 110, 3);
-	ft_putstr(a);
-	ft_putchar('\n');
-	return (0);
+	while (*str != '\0')
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }

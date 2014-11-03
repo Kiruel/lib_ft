@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memset.c                                      :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:53:39 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:06:25 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/03 15:38:20 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/03 15:38:21 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
+#ifndef LIBFT_H
+# define LIBFT_H
 
-int main()
-{
-	char *a;
+# include <fcntl.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = ft_memset(a, 110, 3);
-	ft_putstr(a);
-	ft_putchar('\n');
-	return (0);
-}
+int				ft_strlen(char *str);
+void			ft_putchar(char c);
+void			ft_putstr(char *str);
+void			ft_putnbr(int nb);
+void			*ft_memset(void *b, int c, unsigned int len);
+void			ft_swap(int *a, int *b);
+void			ft_putnbr(int nb);
+#endif

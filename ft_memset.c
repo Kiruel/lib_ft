@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, unsigned int len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int				i;
-	unsigned char	a;
+	size_t			i;
+	unsigned char	*a;
 
 	i = 0;
-	a = b;
-	while (b < len)
+	a = b
+	while (i < len)
 	{
 		a[i] = c;
 		i++;

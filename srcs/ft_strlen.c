@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memset.c                                      :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:53:39 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:06:25 by etheodor         ###   ########.fr       */
+/*   Created: 2014/07/05 12:23:00 by etheodor          #+#    #+#             */
+/*   Updated: 2014/07/11 08:18:25 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
-
-int main()
+int		ft_strlen(char *str)
 {
-	char *a;
+	int	i;
 
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = ft_memset(a, 110, 3);
-	ft_putstr(a);
-	ft_putchar('\n');
-	return (0);
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
 }
