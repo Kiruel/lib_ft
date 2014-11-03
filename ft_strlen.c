@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:16:12 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:50:28 by etheodor         ###   ########.fr       */
+/*   Created: 2014/07/05 12:23:00 by etheodor          #+#    #+#             */
+/*   Updated: 2014/07/11 08:18:25 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, unsigned int len)
+int		ft_strlen(char *str)
 {
-	int				i;
-	unsigned char	a;
+	int	i;
 
 	i = 0;
-	a = b;
-	while (b < len)
+	while (*str != '\0')
 	{
-		a[i] = c;
 		i++;
+		str++;
 	}
-	return (b);
+	return (i);
 }

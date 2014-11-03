@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:16:12 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:50:28 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/03 15:38:20 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/03 15:38:21 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef LIBFT_H
+# define LIBFT_H
 
-void	*ft_memset(void *b, int c, unsigned int len)
-{
-	int				i;
-	unsigned char	a;
+# include <fcntl.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-	i = 0;
-	a = b;
-	while (b < len)
-	{
-		a[i] = c;
-		i++;
-	}
-	return (b);
-}
+// Prototype :
+int				ft_strlen(char *str);
+void			ft_putchar(char c);
+void			ft_putstr(char *str);
+void			ft_putnbr(int nb);
+
+#endif
