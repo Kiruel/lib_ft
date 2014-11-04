@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memset.c                                      :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 14:53:39 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 11:23:10 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/04 18:29:17 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/04 18:51:46 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int		ft_memcmp(void *s1, void *s2, size_t n)
 {
-	char *a;
+	char	*i;
+	char	*j;
+	size_t	a;
 
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = ft_memset(a, 110, 3);
-	ft_putstr(a);
-	ft_putchar('\n');
+	a = 0;
+	i = (char*) s1;
+	j = (char*) s2;
+	while(a < n)
+	{
+		if(*i < *j)
+			return(-1);
+		if(*i > *j)
+			return(1);
+		a++;
+	}
 	return (0);
 }

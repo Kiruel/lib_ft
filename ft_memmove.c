@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_bzero.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 09:25:54 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 14:08:08 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/04 17:53:02 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/04 18:00:49 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+void	*ft_memmove(void *dst, void *src, size_t len)
 {
-	char a[] = "toto";
+	size_t i;
 
-	ft_putstr(a);
-	ft_putchar('\n');
-	ft_bzero(a, 2);
-	ft_putchar(a[3]);
-	ft_putchar('\n');
-	return (0);
+	i = 0;
+	while (i < len)
+	{
+		((char*)dst)[i] = ((char*)src)[i];
+		i++;
+	}
+	return (dst);
 }

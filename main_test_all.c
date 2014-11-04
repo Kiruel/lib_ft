@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 16:04:43 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 17:10:51 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 18:07:07 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,5 +113,29 @@ int		main()
 	c4 = ft_memccpy(b4, a4, 111, 4);
 	ft_putstr(c4);
 	ft_putchar('\n');
+
+//test ft_memmove.c
+//	char *a5 = Remplirmaison();
+//	char *b5 = Remplirtoto();
+	char *c5 = Remplirmaison();
+	char *d5 = Remplirtoto();
+//	char *e5;
+	char *f5;
+
+	ft_putstr("TEST FT_MEMMOVE:\n");
+//	e5 = ft_memmove(a5, b5, 2);
+//	ft_putstr(e5);
+	ft_putchar('\n');
+	f5 = memmove(c5, d5, 2);
+	ft_putstr(f5);
+	ft_putchar('\n');
+/*	if(*e5 == *f5)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+		}*/
 	return (0);
 }

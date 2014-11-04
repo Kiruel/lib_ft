@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_memcpy.c                                      :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 14:24:55 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 14:33:43 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/04 18:14:41 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/04 18:27:57 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+void	*ft_memchr(void *s, int c, size_t n)
 {
-	char a[] = "toto";
-	char b[] = "maison";
-	char *c;
+	size_t i;
 
-	c = (char*)malloc(sizeof(char) * 10 + 1);
-	c = ft_memcpy(b, a, 2);
-	ft_putstr(c);
-	ft_putchar('\n');
+	i = 0;
+	while(i < n)
+	{
+		if(((char*)s)[i] == (char)c)
+			return(s + i);
+		i++;
+	}
 	return (0);
 }
