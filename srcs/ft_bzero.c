@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 09:18:28 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 10:55:37 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 11:21:19 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*a;
+	size_t	i;
 
 	i = 0;
-	a = s;
 	while (i < n)
 	{
-		a[i] = 0;
+		((char*) s)[i] = 0;
 		i++;
 	}
 }
