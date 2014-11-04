@@ -9,20 +9,8 @@
 /*   Updated: 2014/07/13 09:39:55 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 
-int		ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str != '\0')
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {

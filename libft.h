@@ -25,7 +25,7 @@ int		ft_strlen(char *str);
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
-void	*ft_memset(void *b, int c, unsigned int len);
+void	*ft_memset(void *b, int c, size_t len);
 void	ft_swap(int *a, int *b);
 void	ft_putnbr(int nb);
 #endif
