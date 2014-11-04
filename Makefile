@@ -24,7 +24,8 @@ ft_strstr.c \
 ft_strcmp.c \
 ft_strncmp.c \
 ft_memcpy.c \
-ft_memccpy.c
+ft_memccpy.c \
+ft_memchr.c 
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -38,7 +39,8 @@ ft_strstr.o \
 ft_strcmp.o \
 ft_strncmp.o \
 ft_memcpy.o \
-ft_memccpy.o
+ft_memccpy.o \
+ft_memchr.o
 
 all: $(NAME)
 
