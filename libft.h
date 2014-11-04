@@ -20,12 +20,12 @@
 # include <unistd.h>
 # include <strings.h>
 
+void	*ft_memcpy(void *dst, void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
 int		ft_strlen(char *str);
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
 void	*ft_memset(void *b, int c, size_t len);
-void	ft_swap(int *a, int *b);
 void	ft_putnbr(int nb);
 #endif
