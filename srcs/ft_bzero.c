@@ -6,18 +6,22 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 09:18:28 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 09:53:09 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 10:55:37 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <strings.h>
+
 void	ft_bzero(void *s, size_t n)
 {
-	int i;
+	size_t			i;
+	unsigned char	*a;
 
 	i = 0;
-	while(i < n)
+	a = s;
+	while (i < n)
 	{
-		s[i] = '\0';
+		a[i] = 0;
 		i++;
 	}
 }

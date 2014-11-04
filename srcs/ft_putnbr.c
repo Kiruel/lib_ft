@@ -6,9 +6,10 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/10 12:06:41 by etheodor          #+#    #+#             */
-/*   Updated: 2014/07/10 12:09:47 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 10:53:54 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 char	ft_putchar(char c);
 
 void	ft_putnbr(int nb)

@@ -6,13 +6,15 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:16:12 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:50:28 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 10:53:42 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <strings.h>
+
 void	*ft_memset(void *b, int c, size_t len)
 {
-	int		i;
+	size_t			i;
 	unsigned char	*a;
 
 	i = 0;

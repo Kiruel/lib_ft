@@ -6,13 +6,23 @@
 #    By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 15:18:52 by etheodor          #+#    #+#              #
-#    Updated: 2014/11/03 16:02:27 by etheodor         ###   ########.fr        #
+#    Updated: 2014/11/04 10:08:33 by etheodor         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 NAME = libft.a
 
-SOURCE = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_swap.c srcs/ft_memset.c srcs/ft_putnbr.c
-POINTO = ft_putchar.o ft_putstr.o ft_swap.o ft_memset.o ft_putnbr.o
+SOURCE = srcs/ft_putchar.c \
+srcs/ft_putstr.c \
+srcs/ft_swap.c \
+srcs/ft_memset.c \
+srcs/ft_putnbr.c \
+srcs/ft_bzero.c
+POINTO = ft_putchar.o \
+ft_putstr.o \
+ft_swap.o \
+ft_memset.o \
+ft_putnbr.o \
+ft_bzero.o
 
 all: $(NAME)
 
