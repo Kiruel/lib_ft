@@ -11,18 +11,30 @@
 #******************************************************************************#
 NAME = libft.a
 
-SOURCE = srcs/ft_putchar.c \
-srcs/ft_putstr.c \
-srcs/ft_swap.c \
-srcs/ft_memset.c \
-srcs/ft_putnbr.c \
-srcs/ft_bzero.c
+SOURCE = ft_putchar.c \
+ft_putstr.c \
+ft_memset.c \
+ft_putnbr.c \
+ft_bzero.c \
+ft_strlen.c \
+ft_strdup.c \
+ft_strcpy.c \
+ft_strncpy.c \
+ft_strstr.c \
+ft_strcmp.c \
+ft_strncmp.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
-ft_swap.o \
 ft_memset.o \
 ft_putnbr.o \
-ft_bzero.o
+ft_bzero.o \
+ft_strlen.o \
+ft_strdup.o \
+ft_strcpy.o \
+ft_strncpy.o \
+ft_strstr.o \
+ft_strcmp.o \
+ft_strncmp.o
 
 all: $(NAME)
 

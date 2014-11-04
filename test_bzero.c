@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 09:25:54 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 13:44:32 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 14:08:08 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int main()
 {
 	char a[] = "toto";
-	int i;
 
-	i = 9;
 	ft_putstr(a);
 	ft_putchar('\n');
 	ft_bzero(a, 2);
