@@ -20,6 +20,7 @@
 # include <unistd.h>
 # include <strings.h>
 
+void	*ft_memccpy(void *dst, void *src, int c, size_t n);
 void	*ft_memcpy(void *dst, void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
 int		ft_strlen(char *str);
