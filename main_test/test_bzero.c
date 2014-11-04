@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 09:25:54 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 11:20:53 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/04 13:12:02 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 int main()
 {
-	char *a;
+	char a[] = "toto";
 
-	a = (char*)malloc(sizeof(char) * 10 + 1);
-	a = "toto";
 	ft_putstr(a);
 	ft_putchar('\n');
 	ft_bzero(a, 2);
-	ft_putstr(a);
+	ft_putchar(a[3]);
 	ft_putchar('\n');
 	return (0);
 }
