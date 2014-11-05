@@ -18,7 +18,10 @@ void	*ft_memmove(void *dst, void *src, size_t len)
 
   i = 0; 
   if (len > (size_t)ft_strlen(dst))
+    {
       dst = (char*)malloc(sizeof(char) * len + 1);
+      dst[len + 1] = '\0';
+    }
   while (i < len)
     {
       ((char*)dst)[i] = ((char*)src)[i];
