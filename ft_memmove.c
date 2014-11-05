@@ -14,13 +14,18 @@
 
 void	*ft_memmove(void *dst, void *src, size_t len)
 {
-  int i;
+  size_t i;
 
-  i = len;
-  while(i == 0)
+  i = 0;
+  i = (size_t)ft_strlen(dst);
+  if (len > i)
     {
-      ((char *)dst)[i] = ((char *)src)[i];
-      i--;
+      dst = (char*)malloc(sizeof(char) * len + 1);
+      dst = ft_memcpy(dst, src, len);
+    }
+  else
+    {
+      dst = ft_memcpy(dst, src, len);
     }
   return (dst);
 }
