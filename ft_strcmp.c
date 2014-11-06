@@ -9,29 +9,16 @@
 /*   Updated: 2014/07/10 02:13:58 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
-	int i2;
+  int i;
 
-	i2 = 0;
-	i = 0;
-	while (*s1 != '\0')
-	{
-		s1++;
-		i++;
-	}
-	while (*s2 != '\0')
-	{
-		s2++;
-		i2++;
-	}
-	if (i < i2)
-		return (-666);
-	if (i == i2)
-		return (0);
-	if (i > i2)
-		return (8);
-	return (0);
+  if (s1[0] == '\0' && s2[0] == '\0')
+    return (0);
+  i = 0;
+  while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+    i++;
+  return (s1[i] - s2[i]);
 }
