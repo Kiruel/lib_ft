@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/10 01:10:19 by etheodor          #+#    #+#             */
-/*   Updated: 2014/07/10 02:13:58 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/06 16:02:46 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -15,10 +15,8 @@ int	ft_strcmp(char *s1, char *s2)
 {
   int i;
 
-  if (s1[0] == '\0' && s2[0] == '\0')
-    return (0);
   i = 0;
-  while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+  while (s1[i] == s2[i] && s1[i] * s2[i])
     i++;
   return (s1[i] - s2[i]);
 }

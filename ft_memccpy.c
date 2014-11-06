@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:40:44 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 15:20:15 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/06 18:58:58 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memccpy(void *dst, void *src, int c, size_t n)
 			return ((char*)dst + i + 1);
 		i++;
 	}
-	return (0);
+	return (dst);
 }

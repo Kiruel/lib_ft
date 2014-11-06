@@ -6,7 +6,7 @@
 #    By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 15:18:52 by etheodor          #+#    #+#              #
-#    Updated: 2014/11/04 14:28:38 by etheodor         ###   ########.fr        #
+#    Updated: 2014/11/06 15:49:26 by etheodor         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 NAME = libft.a
@@ -25,7 +25,11 @@ ft_strcmp.c \
 ft_strncmp.c \
 ft_memcpy.c \
 ft_memccpy.c \
-ft_memchr.c 
+ft_memchr.c \
+ft_strcat.c \
+ft_memmove.c \
+ft_memcmp.c \
+ft_strncat.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -40,7 +44,11 @@ ft_strcmp.o \
 ft_strncmp.o \
 ft_memcpy.o \
 ft_memccpy.o \
-ft_memchr.o
+ft_memchr.o \
+ft_strcat.o \
+ft_memmove.o \
+ft_memcmp.o \
+ft_strncat.o
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/10 12:12:04 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/03 15:05:56 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/06 18:57:34 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	ft_putstr(char *str)
 {
-	while (*str != '\0')
-	{
-		ft_putchar(*str);
-		str++;
-	}
+	if (str != 0)
+		while (*str != '\0')
+		{
+			ft_putchar(*str);
+			str++;
+		}
 }
