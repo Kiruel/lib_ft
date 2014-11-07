@@ -20,6 +20,7 @@
 # include <unistd.h>
 # include <strings.h>
 
+size_t	ft_strlcat(char *dst, char *src, size_t n);
 char	*ft_strcat(char *dst, char *src);
 char	*ft_strncat(char *dst, char *src, size_t n);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);

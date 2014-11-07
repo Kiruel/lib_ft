@@ -21,7 +21,7 @@ char	*ft_strcat(char *dst, char *src)
   j = 0;
   while (i < (ft_strlen(dst) + ft_strlen(src)))
   {
-	  dst[i] = src[i];
+	  dst[i] = src[j];
 	  i++;
 	  j++;
   }

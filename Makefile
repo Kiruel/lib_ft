@@ -29,7 +29,8 @@ ft_memchr.c \
 ft_strcat.c \
 ft_memmove.c \
 ft_memcmp.c \
-ft_strncat.c
+ft_strncat.c \
+ft_strlcat.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -48,7 +49,8 @@ ft_memchr.o \
 ft_strcat.o \
 ft_memmove.o \
 ft_memcmp.o \
-ft_strncat.o
+ft_strncat.o \
+ft_strlcat.o
 
 all: $(NAME)
 

@@ -124,13 +124,17 @@ int		main()
 
 	ft_putstr("TEST FT_MEMCCPY:\n");
 	c4 = (char*)malloc(sizeof(char) * 20 + 1);
-	c4 = memccpy(b4, a4, 111, 4);
-	ft_putstr(c4);
-	ft_putchar('\n');
+	c4 = memccpy(b4, a4, 111, 2);
 	f4 = (char*)malloc(sizeof(char) * 20 + 1);
-	f4 = ft_memccpy(d4, e4, 111, 4);
-	ft_putstr(f4);
-	ft_putchar('\n');
+	f4 = ft_memccpy(e4, d4, 111, 2);
+	if (ft_match(c4, f4))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
 
 //test ft_memmove.c
 	char *a5 = Remplirmaison();
@@ -156,10 +160,30 @@ int		main()
 	char *a6 = Remplirmaison();
 	char *b6 = Remplirtoto();
 	char *c6;
+	char *d6 = Remplirmaison();
+	char *e6 = Remplirtoto();
+	char *f6;
 
 	ft_putstr("TEST FT_STRCPY:\n");
 	c6 = strcpy(a6, b6);
-	ft_putstr(c6);
+	f6 = ft_strcpy(d6, e6);
+	if(ft_match(c6, f6))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+
+//test ft_strlcat.c
+	char *a7 = Remplirmaison();
+	char *b7 = Remplirtoto();
+	int c7;
+
+	ft_putstr("TEST FT_STRLCAT:\n");
+	c7 = strlcat(a7, b7, 5);
+	ft_putnbr(c7);
 	ft_putchar('\n');
 	return (0);
 }

@@ -21,8 +21,8 @@ char	*ft_strncat(char *dst, char *src, size_t n)
   j = 0;
   while ((int) i < ft_strlen(dst) + ft_strlen(src))
     {
-		if ((size_t)src[j] == n)
-		  return (dst);
+      if ((size_t)src[j] == n)
+	return (dst);
       dst[i] = src[j];
       i++;
       j++;
