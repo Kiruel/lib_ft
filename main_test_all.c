@@ -20,6 +20,10 @@ int		ft_match(char *c, char *v)
 	int i;
 
 	i = 0;
+	if (!c && !v)
+		return (1);
+	if (! (c && v))
+		return (0);
 	while (c[i] && v[i])
 	{
 		if (c[i] != v[i])
@@ -225,15 +229,40 @@ int		main()
 //test ft_strstr.c
 	char a10[] = "Salut les gars!";
 	char b10[] = "les";
-	char *c;
-	char *d;
+	char *c10;
+	char *d10;
 
 	ft_putstr("TEST FT_STRSTR:\n");
-	c = strstr(a10, b10);
-	d = ft_strstr(a10, b10);
-	ft_putstr(c);
-	ft_putchar('\n');
-	ft_putstr(d);
-	ft_putchar('\n');
+	c10 = strstr(a10, b10);
+	d10 = ft_strstr(a10, b10);
+	if(ft_match(c10, d10))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//test ft_strnstr.c
+	char a11[] = "Salut les gars!";
+	char b11[] = "les";
+	char *c11;
+	char *d11;
+	char *e11;
+	char *f11;
+
+	ft_putstr("TEST FT_STRNSTR:\n");
+	c11 = strnstr(a11, b11, 8);
+	d11 = ft_strnstr(a11, b11, 8);
+	e11 = strnstr(a11, b11, 9);
+	f11 = ft_strnstr(a11, b11, 9);
+	if(ft_match(c11, d11) && ft_match(e11, f11))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
 	return (0);
 }

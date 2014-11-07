@@ -33,7 +33,7 @@ ft_strncat.c \
 ft_strlcat.c \
 ft_strchr.c \
 ft_strrchr.c \
-#ft_strnstr.c \#
+ft_strnstr.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -56,7 +56,7 @@ ft_strncat.o \
 ft_strlcat.o \
 ft_strchr.o \
 ft_strrchr.o \
-#ft_strnstr.o#
+ft_strnstr.o
 
 all: $(NAME)
 

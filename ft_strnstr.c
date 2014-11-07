@@ -14,21 +14,24 @@
 
 char	*ft_strnstr(char *s1, char *s2, size_t n)
 {
-	int i;
+	int 	i;
+	size_t 	j;
 
-	while (*s1)
+	j = 0;
+	while (*s1 && j < n)
 	{
 		if (*s1 == *s2)
 		{
 			i = 0;
-			while (s1[i] == s2[i])
+			while (s1[i] == s2[i] && j + i < n)
 			{
 				i++;
-				if (s2[i])
+				if (s2[i] == 0)
 					return (s1);
 			}
 		}
 		s1++;
+		j++;
 	}
 	return (0);
 }
