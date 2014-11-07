@@ -10,7 +10,7 @@
 #                                                                              #
 #******************************************************************************#
 NAME = libft.a
-
+CFLAG = -Wall -Wextra -Werror
 SOURCE = ft_putchar.c \
 ft_putstr.c \
 ft_memset.c \
@@ -31,7 +31,8 @@ ft_memmove.c \
 ft_memcmp.c \
 ft_strncat.c \
 ft_strlcat.c \
-ft_strchr.c
+ft_strchr.c \
+ft_strrchr.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -52,14 +53,17 @@ ft_memmove.o \
 ft_memcmp.o \
 ft_strncat.o \
 ft_strlcat.o \
-ft_strchr.o
+ft_strchr.o \
+ft_strrchr.o
 
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SOURCE) -I includes
+	gcc $(CFLAG) -c $(SOURCE) -I includes
 	ar rc libft.a $(POINTO)
 	ranlib libft.a
+test:
+	gcc $(CFLAG) main_test_all.c libft.a
 
 clean:
 	rm -rf $(POINTO)

@@ -11,7 +11,7 @@ size_t	ft_strlcat(char *dst, char *src, size_t n)
   s1 = dst;
   s2 = src;
 
-  
+  k++;
   i = ft_strlen(ft_strcat(s1, s2));
   return (i);
 }

@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/07 15:03:18 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/07 15:03:21 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/07 15:04:08 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/07 15:11:25 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strrchr(char *s, int c)
 {
   int i;
 
-  i = 0;
-  while (i < ft_strlen(s))
+  i = ft_strlen(s);
+  while (i >= 0)
     {
       if (s[i] == (char)c)
 	return (&s[i]);
-	i++;
+	i--;
     }
   return (0);
 }
