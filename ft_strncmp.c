@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/10 12:14:15 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/06 16:04:26 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/07 16:14:21 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int i;
 
 	if (n == 0)
-	  return (0);
+		return (0);
 	i = 0;
 	while (s1[i] == s2[i] && s1[i] * s2[i] && i < (n - 1))
 		i++;

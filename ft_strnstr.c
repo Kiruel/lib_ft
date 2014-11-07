@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 18:29:17 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/07 16:06:36 by etheodor         ###   ########.fr       */
+/*   Created: 2014/11/07 15:37:24 by etheodor          #+#    #+#             */
+/*   Updated: 2014/11/07 16:29:58 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(void *s1, void *s2, size_t n)
+char	*ft_strnstr(char *s1, char *s2, size_t n)
 {
-	char	*i;
-	char	*j;
-	size_t	a;
+	int i;
 
-	a = 0;
-	i = (char*)s1;
-	j = (char*)s2;
-	while (a < n)
+	while (*s1)
 	{
-		if (*i < *j)
-			return (-1);
-		if (*i > *j)
-			return (1);
-		a++;
+		if (*s1 == *s2)
+		{
+			i = 0;
+			while (s1[i] == s2[i])
+			{
+				i++;
+				if (s2[i])
+					return (s1);
+			}
+		}
+		s1++;
 	}
 	return (0);
 }

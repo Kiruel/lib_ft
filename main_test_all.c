@@ -222,5 +222,18 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//test ft_strstr.c
+	char a10[] = "Salut les gars!";
+	char b10[] = "les";
+	char *c;
+	char *d;
+
+	ft_putstr("TEST FT_STRSTR:\n");
+	c = strstr(a10, b10);
+	d = ft_strstr(a10, b10);
+	ft_putstr(c);
+	ft_putchar('\n');
+	ft_putstr(d);
+	ft_putchar('\n');
 	return (0);
 }

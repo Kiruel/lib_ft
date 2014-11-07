@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/12 16:44:56 by etheodor          #+#    #+#             */
-/*   Updated: 2014/07/13 09:39:55 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/07 16:10:44 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strdup(char *src)
 {
-	int	i;
+	int		i;
 	char	*dest;
 
 	i = ft_strlen(src);
 	dest = (char*)malloc(sizeof(*dest) * (i + 1));
 	if (dest == 0)
-	    return (0);
+		return (0);
 	i = 0;
 	while (src[i] != '\0')
 	{

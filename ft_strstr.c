@@ -6,27 +6,27 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/09 17:51:48 by etheodor          #+#    #+#             */
-/*   Updated: 2014/07/09 19:04:49 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/07 17:13:47 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strstr(char *s1, char *s2)
 {
 	int i;
 
-	while (*str != '\0')
+	while (*s1)
 	{
-		if (*str == *to_find)
+		if (*s1 == *s2)
 		{
 			i = 0;
-			while (str[i] == to_find[i])
+			while (s1[i] == s2[i])
 			{
 				i++;
-				if (to_find[i] == '\0')
-					return (str);
+				if (s2[i])
+					return (s1);
 			}
 		}
-		str++;
+		s1++;
 	}
-	return ('\0');
+	return (0);
 }

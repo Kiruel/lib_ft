@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 18:14:41 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/04 18:27:57 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/07 16:05:57 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	*ft_memchr(void *s, int c, size_t n)
 	size_t i;
 
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
-		if(((char*)s)[i] == (char)c)
-			return(s + i);
+		if (((char*)s)[i] == (char)c)
+			return (s + i);
 		i++;
 	}
 	return (0);

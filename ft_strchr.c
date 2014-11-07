@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:03:18 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/07 15:03:21 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/07 16:09:30 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strchr(char *s, int c)
 {
-  int i;
+	int i;
 
-  i = 0;
-  while (i < ft_strlen(s))
-    {
-      if (s[i] == (char)c)
-	return (&s[i]);
-	i++;
-    }
-  return (0);
+	i = 0;
+	while (i < ft_strlen(s))
+	{
+		if (s[i] == (char)c)
+			return (&s[i]);
+		i++;
+	}
+	return (0);
 }

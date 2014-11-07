@@ -20,6 +20,8 @@
 # include <unistd.h>
 # include <strings.h>
 
+char	*ft_strstr(char *s1, char *s2);
+//char	*ft_strnstr(char *s1, char *s2, size_t n);
 char	*ft_strrchr(char *s, int c);
 char	*ft_strchr(char *s, int c);
 size_t	ft_strlcat(char *dst, char *src, size_t n);
