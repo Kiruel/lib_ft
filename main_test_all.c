@@ -183,7 +183,27 @@ int		main()
 
 	ft_putstr("TEST FT_STRLCAT:\n");
 	c7 = strlcat(a7, b7, 5);
-	ft_putnbr(c7);
+	//ft_putnbr(c7);
+	ft_putstr("not test");
 	ft_putchar('\n');
+
+//test ft_strchr.c
+	char *a8 = Remplirmaison();
+	char *b8;
+	char *c8 = Remplirmaison();
+	char *d8;
+
+	ft_putstr("TEST FT_STRCHR:\n");
+	b8 = strchr(a8, 109);
+	d8 = ft_strchr(c8, 109);
+	if(ft_match(c6, f6))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+
 	return (0);
 }
