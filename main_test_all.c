@@ -321,5 +321,22 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//test ft_isalpha.c
+	int a15;
+	int b15;
+	int c15;
+
+	ft_putstr("TEST FT_ISALPHA:\n");
+	a15 = 91;
+	b15 = isalpha(a15);
+	c15 = ft_isalpha(a15);
+	if(b15 == c15)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
 	return (0);
 }
