@@ -43,7 +43,11 @@ ft_isalnum.c \
 ft_isascii.c \
 ft_isprint.c \
 ft_toupper.c \
-ft_tolower.c
+ft_tolower.c \
+ft_putchar_fd.c \
+ft_putstr_fd.c \
+ft_putnbr_fd.c \
+ft_memalloc.c
 
 POINTO = ft_putchar.o \
 ft_putstr.o \
@@ -75,7 +79,11 @@ ft_isalnum.o \
 ft_isascii.o \
 ft_isprint.o \
 ft_toupper.o \
-ft_tolower.o
+ft_tolower.o \
+ft_putchar_fd.o \
+ft_putstr_fd.o \
+ft_putnbr_fd.o \
+ft_memalloc.o
 
 all: $(NAME)
 

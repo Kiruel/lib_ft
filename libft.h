@@ -21,6 +21,10 @@
 # include <strings.h>
 # include <ctype.h>
 
+void	ft_memalloc(size_t size);
+void	ft_putnbr_fd(int nb, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putchar_fd(char c, int fd);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_isprint(int c);
