@@ -63,7 +63,7 @@ void	*Remplirmaison()
 
 int		main()
 {
-//test ft_memset.c
+//---------------------------test ft_memset.c----------------------------------/
 	char *a1;
 	char *b1;
 
@@ -80,7 +80,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_bzero.c
 	char *a2 = Remplirtoto();
 	char *b2 = Remplirtoto();
@@ -96,7 +96,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_memcpy.c
 	char *a3 = Remplirmaison();
 	char *b3 = Remplirtoto();
@@ -116,7 +116,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_memccpy.c
 	char *a4 = Remplirtoto();
 	char *b4 = Remplirmaison();
@@ -139,7 +139,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_memmove.c
 	char *a5 = Remplirmaison();
 	char *b5 = Remplirtoto();
@@ -159,7 +159,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_strcpy.c
 	char *a6 = Remplirmaison();
 	char *b6 = Remplirtoto();
@@ -179,8 +179,8 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
-//test ft_strlcat.c
+//-----------------------------------------------------------------------------/
+//test ft_strlcat.c/
 /*	char *a7 = Remplirmaison();
 	char *b7 = Remplirtoto();
 	int c7;
@@ -190,7 +190,7 @@ int		main()
 	//ft_putnbr(c7);
 	ft_putstr("not test");
 	ft_putchar('\n');
-
+//-----------------------------------------------------------------------------/
 //test ft_strchr.c
 	char *a8 = Remplirmaison();
 	char *b8;
@@ -208,7 +208,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_strrchr.c
 	char *a9 = Remplirtoto();
 	char *b9;
@@ -226,6 +226,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//-----------------------------------------------------------------------------/
 //test ft_strstr.c
 	char a10[] = "Salut les gars!";
 	char b10[] = "les";
@@ -243,6 +244,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//-----------------------------------------------------------------------------/
 //test ft_strnstr.c
 	char a11[] = "Salut les gars!";
 	char b11[] = "les";
@@ -264,7 +266,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_strcmp.c
 	char *a12 = Remplirmaison();
 	char *b12 = Remplirtoto();
@@ -284,7 +286,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
-
+//-----------------------------------------------------------------------------/
 //test ft_strncmp.c
 	char *a13 = Remplirmaison();
 	char *b13 = Remplirtoto();
@@ -304,6 +306,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//-----------------------------------------------------------------------------/
 //test ft_atoi.c
 	char *a14 = "-4434";
 	int b14;
@@ -321,6 +324,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//-----------------------------------------------------------------------------/
 //test ft_isalpha.c
 	int a15;
 	int b15;
@@ -338,6 +342,7 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//-----------------------------------------------------------------------------/
 //test ft_isdigit.c
 	int a16;
 	int b16;
@@ -354,6 +359,96 @@ int		main()
 	else
 	{
 		ft_putstr("ERROR\n");
-	}	
+	}
+//-----------------------------------------------------------------------------/
+//test ft_isalnum.c
+	int a17;
+	int b17;
+	int c17;
+
+	ft_putstr("TEST FT_ISALNUM:\n");
+	a17 = 40;
+	b17 = isalnum(a17);
+	c17 = ft_isalnum(a17);
+	if(b17 == c17)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//-----------------------------------------------------------------------------/
+//test ft_isascii.c
+	int a18;
+	int b18;
+	int c18;
+
+	ft_putstr("TEST FT_ISASCII:\n");
+	a18 = 0;
+	b18 = isascii(a18);
+	c18 = ft_isascii(a18);
+	if(b18 == c18)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//-----------------------------------------------------------------------------/
+//test ft_isprint.c
+	int a19;
+	int b19;
+	int c19;
+
+	ft_putstr("TEST FT_ISPRINT:\n");
+	a19 = 0;
+	b19 = isprint(a19);
+	c19 = ft_isprint(a19);
+	if(b19 == c19)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//-----------------------------------------------------------------------------/
+//test ft_toupper.c
+	int a20;
+	int b20;
+	int c20;
+
+	ft_putstr("TEST FT_TOUPPER:\n");
+	a20 = 101;
+	b20 = toupper(a20);
+	c20 = ft_toupper(a20);
+	if(b20 == c20)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//-----------------------------------------------------------------------------/
+//test ft_tolower.c
+	int a21;
+	int b21;
+	int c21;
+
+	ft_putstr("TEST FT_TOUPPER:\n");
+	a21 = 68;
+	b21 = tolower(a21);
+	c21 = ft_tolower(a21);
+	if(b21 == c21)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
 	return (0);
 }
