@@ -20,6 +20,8 @@
 # include <unistd.h>
 # include <strings.h>
 
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strcmp(char *s1, char *s2);
 char	*ft_strstr(char *s1, char *s2);
 char	*ft_strnstr(char *s1, char *s2, size_t n);
 char	*ft_strrchr(char *s, int c);

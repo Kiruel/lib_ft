@@ -33,6 +33,20 @@ int		ft_match(char *c, char *v)
 	return (c[i] == v[i]);
 }
 
+int		ft_matchint(int c, int v)
+{
+	int i;
+
+	i = 0;
+	if (!c && !v)
+		return (1);
+	if (! (c && v))
+		return (0);
+	if (c != v)
+		return (0);
+	return (c == v);
+}
+
 void	*Remplirtoto()
 {
 	char *poulet;
@@ -257,6 +271,46 @@ int		main()
 	e11 = strnstr(a11, b11, 9);
 	f11 = ft_strnstr(a11, b11, 9);
 	if(ft_match(c11, d11) && ft_match(e11, f11))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+
+//test ft_strcmp.c
+	char *a12 = Remplirmaison();
+	char *b12 = Remplirtoto();
+	int c12;
+	int d12;
+
+	d12 = 0;
+	c12 = 0;
+	ft_putstr("TEST FT_STRCMP:\n");
+	c12 = strcmp(a12, b12);
+	d12 = ft_strcmp(a12, b12);
+	if(ft_matchint(c12, d12))
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+
+//test ft_strncmp.c
+	char *a13 = Remplirmaison();
+	char *b13 = Remplirtoto();
+	int c13;
+	int d13;
+
+	d13 = 0;
+	c13 = 0;
+	ft_putstr("TEST FT_STRNCMP:\n");
+	c13 = strncmp(a13, b13, -1);
+	d13 = ft_strncmp(a13, b13, -1);
+	if(ft_matchint(c13, d13))
 	{
 		ft_putstr("OK\n");
 	}
