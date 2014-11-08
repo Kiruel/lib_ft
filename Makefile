@@ -35,7 +35,8 @@ ft_strchr.c \
 ft_strrchr.c \
 ft_strnstr.c \
 ft_atoi.c \
-ft_isalpha.c
+ft_isalpha.c \
+ft_isdigit.c
 POINTO = ft_putchar.o \
 ft_putstr.o \
 ft_memset.o \
@@ -60,7 +61,8 @@ ft_strchr.o \
 ft_strrchr.o \
 ft_strnstr.o \
 ft_atoi.o \
-ft_isalpha.o
+ft_isalpha.o \
+ft_isdigit.o
 
 all: $(NAME)
 

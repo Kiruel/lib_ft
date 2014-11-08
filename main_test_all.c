@@ -327,7 +327,7 @@ int		main()
 	int c15;
 
 	ft_putstr("TEST FT_ISALPHA:\n");
-	a15 = 91;
+	a15 = 0;
 	b15 = isalpha(a15);
 	c15 = ft_isalpha(a15);
 	if(b15 == c15)
@@ -338,5 +338,22 @@ int		main()
 	{
 		ft_putstr("ERROR\n");
 	}
+//test ft_isdigit.c
+	int a16;
+	int b16;
+	int c16;
+
+	ft_putstr("TEST FT_ISDIGIT:\n");
+	a16 = 58;
+	b16 = isdigit(a16);
+	c16 = ft_isdigit(a16);
+	if(b16 == c16)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}	
 	return (0);
 }
