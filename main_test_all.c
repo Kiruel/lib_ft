@@ -33,20 +33,6 @@ int		ft_match(char *c, char *v)
 	return (c[i] == v[i]);
 }
 
-int		ft_matchint(int c, int v)
-{
-	int i;
-
-	i = 0;
-	if (!c && !v)
-		return (1);
-	if (! (c && v))
-		return (0);
-	if (c != v)
-		return (0);
-	return (c == v);
-}
-
 void	*Remplirtoto()
 {
 	char *poulet;
@@ -290,7 +276,7 @@ int		main()
 	ft_putstr("TEST FT_STRCMP:\n");
 	c12 = strcmp(a12, b12);
 	d12 = ft_strcmp(a12, b12);
-	if(ft_matchint(c12, d12))
+	if(c12 == d12)
 	{
 		ft_putstr("OK\n");
 	}
@@ -308,9 +294,26 @@ int		main()
 	d13 = 0;
 	c13 = 0;
 	ft_putstr("TEST FT_STRNCMP:\n");
-	c13 = strncmp(a13, b13, -1);
-	d13 = ft_strncmp(a13, b13, -1);
-	if(ft_matchint(c13, d13))
+	c13 = strncmp(a13, b13, 2);
+	d13 = ft_strncmp(a13, b13, 2);
+	if(c13 == d13)
+	{
+		ft_putstr("OK\n");
+	}
+	else
+	{
+		ft_putstr("ERROR\n");
+	}
+//test ft_atoi.c
+	char *a14 = "-4434";
+	int b14;
+	int d14;
+
+	b14 = 0;
+	ft_putstr("TEST FT_ATOI:\n");
+	b14 = atoi(a14);
+	d14 = ft_atoi(a14);
+	if(b14 == d14)
 	{
 		ft_putstr("OK\n");
 	}

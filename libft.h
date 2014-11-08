@@ -20,6 +20,7 @@
 # include <unistd.h>
 # include <strings.h>
 
+int		ft_atoi(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_strcmp(char *s1, char *s2);
 char	*ft_strstr(char *s1, char *s2);
