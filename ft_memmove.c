@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <strings.h>
 
 void	*ft_memmove(void *dst, void *src, size_t len)
 {

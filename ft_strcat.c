@@ -10,7 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+static int		ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
+}
 
 char	*ft_strcat(char *dst, char *src)
 {

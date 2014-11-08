@@ -10,7 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <strings.h>
+
+static int		ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
+}
+
+static char	*ft_strcat(char *dst, char *src)
+{
+	int	i;
+	int	j;
+
+	i = ft_strlen(dst);
+	j = 0;
+	while (i < (ft_strlen(dst) + ft_strlen(src)))
+	{
+		dst[i] = src[j];
+		i++;
+		j++;
+	}
+	dst[i] = 0;
+	return (dst);
+}
 
 size_t	ft_strlcat(char *dst, char *src, size_t n)
 {
