@@ -21,6 +21,23 @@
 # include <strings.h>
 # include <ctype.h>
 
+void	ft_putnbr_fd(int nb, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl(char const *str);
+char	*ft_strtrim(char const *s);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmap(char const *s, char (*f)(char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striter(char *s, void (*f)(char *));
+void	ft_strclr(char *s);
+void	ft_strdel(char **as);
+char	*ft_strnew(size_t size);
+void	ft_memdel(void **ap);
 void	ft_memalloc(size_t size);
 void	ft_putnbr_fd(int nb, int fd);
 void	ft_putstr_fd(char *str, int fd);
@@ -35,7 +52,7 @@ int		ft_isalpha(int c);
 int		ft_atoi(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_strcmp(char *s1, char *s2);
-char	*ft_strstr(char *s1, char *s2);
+char	*ft_strstr(const char *s1, const char *s2);
 char	*ft_strnstr(char *s1, char *s2, size_t n);
 char	*ft_strrchr(char *s, int c);
 char	*ft_strchr(char *s, int c);
@@ -44,7 +61,7 @@ char	*ft_strcat(char *dst, char *src);
 char	*ft_strncat(char *dst, char *src, size_t n);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 char	*ft_strcpy(char *dest, char *src);
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *src);
 int		ft_memcmp(void *s1, void *s2, size_t n);
 void	*ft_memchr(void *s, int c, size_t n);
 void	*ft_memmove(void *dst, void *src, size_t len);

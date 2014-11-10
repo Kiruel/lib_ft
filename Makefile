@@ -47,7 +47,23 @@ ft_tolower.c \
 ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putnbr_fd.c \
-ft_memalloc.c
+ft_memalloc.c \
+ft_memdel.c \
+ft_strnew.c \
+ft_strdel.c \
+ft_strclr.c \
+ft_striter.c \
+ft_striteri.c \
+ft_strmap.c \
+ft_strmapi.c \
+ft_strequ.c \
+ft_strnequ.c \
+ft_strjoin.c \
+ft_strtrim.c \
+ft_putendl.c \
+ft_putchar_fd.c \
+ft_putstr_fd.c \
+ft_putnbr_fd.c
 
 POINTO = ft_putchar.o \
 ft_putstr.o \
@@ -83,7 +99,22 @@ ft_tolower.o \
 ft_putchar_fd.o \
 ft_putstr_fd.o \
 ft_putnbr_fd.o \
-ft_memalloc.o
+ft_memalloc.o \
+ft_memdel.o \
+ft_strnew.o \
+ft_strdel.o \
+ft_strclr.o \
+ft_striter.o \
+ft_striteri.o \
+ft_strmap.o \
+ft_strmapi.o \
+ft_strnequ.o \
+ft_strjoin.o \
+ft_strtrim.o \
+ft_putendl.o \
+ft_putchar_fd.o \
+ft_putstr_fd.o \
+ft_putnbr_fd.o
 
 all: $(NAME)
 
