@@ -25,7 +25,7 @@ static int		ft_strlen(char *str)
 	return (i);
 }
 
-void	*ft_memccpy(void *dst, void *src, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t	i;
 	size_t	j;

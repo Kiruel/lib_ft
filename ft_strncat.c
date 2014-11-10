@@ -25,21 +25,21 @@ static int		ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strncat(char *dst, char *src, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t i;
 	size_t j;
 
-	i = (size_t)ft_strlen(dst);
+	i = (size_t)ft_strlen(s1);
 	j = 0;
-	while ((int)i < ft_strlen(dst) + ft_strlen(src))
+	while ((int)i < ft_strlen(s1) + ft_strlen(s2))
 	{
-		if ((size_t)src[j] == n)
-			return (dst);
-		dst[i] = src[j];
+		if ((size_t)s2[j] == n)
+			return (s1);
+		s1[i] = s2[j];
 		i++;
 		j++;
 	}
-	dst[i] = 0;
-	return (dst);
+	s1[i] = 0;
+	return (s1);
 }

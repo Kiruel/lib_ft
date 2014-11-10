@@ -23,19 +23,19 @@ static int		ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strcat(char *dst, char *src)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int	i;
 	int	j;
 
-	i = ft_strlen(dst);
+	i = ft_strlen(s1);
 	j = 0;
-	while (i < (ft_strlen(dst) + ft_strlen(src)))
+	while (i < (ft_strlen(s1) + ft_strlen(s2)))
 	{
-		dst[i] = src[j];
+		s1[i] = s2[j];
 		i++;
 		j++;
 	}
-	dst[i] = 0;
-	return (dst);
+	s1[i] = 0;
+	return (s1);
 }

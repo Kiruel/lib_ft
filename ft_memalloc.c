@@ -7,7 +7,7 @@ void	*ft_memalloc(size_t size)
   size_t i;
 
 	i = 0;
-  	new = (char*)malloc(sizeof(char) * size);
+  	new = malloc(size);
   	while (i < size)
   	{
   		new[i] = 0;
