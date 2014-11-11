@@ -144,8 +144,8 @@ int					main(int argc, const char **argv)
 	D_ADD_HCTEST(memccpy);
 #define	D_MEMMOVE
 	D_ADD_HCTEST(memmove);
-//#define	D_MEMCHR
-//	D_ADD_HCTEST(memchr);
+#define	D_MEMCHR
+	D_ADD_HCTEST(memchr);
 #define	D_MEMCMP
 	D_ADD_HCTEST(memcmp);
 #define	D_STRLEN
@@ -160,8 +160,8 @@ int					main(int argc, const char **argv)
 	D_ADD_TEST(strcat);
 #define	D_STRNCAT
 	D_ADD_TEST(strncat);
-//#define	D_STRLCAT
-//	D_ADD_TEST(strlcat);
+#define	D_STRLCAT
+	D_ADD_TEST(strlcat);
 #define	D_STRCHR
 	D_ADD_TEST(strchr);
 #define	D_STRRCHR
@@ -190,8 +190,8 @@ int					main(int argc, const char **argv)
 	D_ADD_HCTEST(toupper);
 #define	D_TOLOWER
 	D_ADD_HCTEST(tolower);
-//#define	D_MEMALLOC_AND_DEL
-//	D_ADD_TEST(memalloc_and_del);
+#define	D_MEMALLOC_AND_DEL
+	D_ADD_TEST(memalloc_and_del);
 #define	D_STRNEW
 	D_ADD_TEST(strnew);
 #define	D_STRDEL
@@ -1601,7 +1601,7 @@ int				uf_test_memchr(void)
 	int				i;
 
 	i = -300;
-	memchr(NULL, 0, 0);
+	//memchr(NULL, 0, 0);
 	ft_memchr(NULL, 0, 0);
 	while (i < 300)
 	{
