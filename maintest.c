@@ -3,10 +3,13 @@
 
 int main()
 {
-	int result;
+  char s1[] = "poil de fion";
+  char s2[] = "maison";
+  size_t len;
 
-	result = ft_atoi("-12a3");
-	ft_putnbr(result);
-	ft_putchar('\n');
-	return (0);
+  len = 4;
+  memmove(s1, s2, len);
+  ft_putstr(s1);
+  ft_putchar('\n');
+  return (0);
 }

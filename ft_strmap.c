@@ -34,6 +34,10 @@ char			*ft_strmap(char const *s, char (*f)(char))
 	new = (char*)malloc(sizeof(char) * ft_strlen((char*)s) + 1);
 	if (new == 0)
 		return (0);
+	if (s == 0 && f == 0)
+		return (0);
+	if (s[0] == '\0')
+		return (0);
 	while (s[i])
 	{
 		new[i] = f(s[i]);

@@ -12,36 +12,17 @@
 
 #include <string.h>
 
-static size_t	ft_strlen(char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (*str != '\0')
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
-
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t i;
-	int j;
 
-	i = ft_strlen((char*)src);
-	j = 0;
-	while (i > n)
+	i = 0;
+	while (i < n)
 	{
-		if (c == j)
-			return (dst);
-		((char*)dst)[j] = ((char*)src)[j];
-		j++;
-		i--;
-		if (i == 0)
-			return (dst);
+		((char*)dst)[i] = ((char*)src)[i];
+		if (((char*)src)[i] == (char)c)
+			return (&dst[i + 1]);
+		i++;
 	}
 	return (0);
 }
-
