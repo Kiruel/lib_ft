@@ -14,9 +14,11 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	int		i;
+	size_t		i;
 	char	*cpy;
 
+	if (s == 0)
+		return (0);
 	i = 0;
 	cpy = (char*)malloc(sizeof(char) * len + 1);
 	while (i < len)

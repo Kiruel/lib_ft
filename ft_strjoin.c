@@ -31,6 +31,8 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;
 
+	if (!s1 || !s2)
+		return (0);
 	s3 = (char*)malloc(sizeof(char) * ft_strlen((char*)s1) + \
 ft_strlen((char*)s2) + 1);
 	i = 0;
@@ -40,7 +42,7 @@ ft_strlen((char*)s2) + 1);
 		s3[i] = s1[i];
 		i++;
 	}
-	while (i < ft_strlen(s3))
+	while (j < ft_strlen(s3))
 	{
 		s3[i] = s2[j];
 		i++;

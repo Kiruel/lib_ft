@@ -11,15 +11,24 @@
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdlib.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t i;
+	char *str;
 
+	i = 0;
+	str = (char*)malloc(sizeof(char) * len + 1);
+	while (i < len)
+	{
+		str[i] = ((char*)src)[i];
+		i++;
+	}
 	i = 0;
 	while (i < len)
 	{
-		((char*)dst)[i] = ((char*)src)[i];
+		((char*)dst)[i] = str[i];
 		i++;
 	}
 	return (dst);

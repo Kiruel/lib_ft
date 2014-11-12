@@ -63,7 +63,8 @@ ft_strtrim.c \
 ft_putendl.c \
 ft_putchar_fd.c \
 ft_putstr_fd.c \
-ft_putnbr_fd.c
+ft_putnbr_fd.c \
+ft_strsub.c
 
 POINTO = ft_putchar.o \
 ft_putstr.o \
@@ -115,7 +116,8 @@ ft_strtrim.o \
 ft_putendl.o \
 ft_putchar_fd.o \
 ft_putstr_fd.o \
-ft_putnbr_fd.o
+ft_putnbr_fd.o \
+ft_strsub.o
 
 all: $(NAME)
 

@@ -64,7 +64,7 @@ char	*ft_strcpy(char *dest, char *src);
 char	*ft_strdup(char *src);
 int		ft_memcmp(void *s1, void *s2, size_t n);
 void	*ft_memchr(void *s, int c, size_t n);
-void	*ft_memmove(void *dst, void *src, size_t len);
+void	*ft_memmove(void *dst, const void *src, size_t n);
 char	*ft_strcat(char *dst, char *src);
 void	*ft_memccpy(void *dst, void *src, int c, size_t n);
 void	*ft_memcpy(void *dst, void *src, size_t n);

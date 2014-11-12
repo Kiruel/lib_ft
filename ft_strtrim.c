@@ -12,41 +12,46 @@
 
 #include <stdlib.h>
 
-static int	ft_strlen(char *str)
+static int		ft_strlen(char *str)
 {
-	int	i;
+	int n;
 
-	i = 0;
-	while (*str != '\0')
-	{
-		i++;
-		str++;
-	}
-	return (i);
+	n = 0;
+	if (!str)
+		return (0);
+	while (str[n] != 0)
+		n++;
+	return (n);
 }
 
-char		*ft_strtrim(char const *s)
+char			*ft_strtrim(const char *s)
 {
-	char	*cpy;
 	int		i;
 	int		j;
 	int		p;
+	char	*str;
 
 	i = 0;
 	p = 0;
-	j = ft_strlen((char*)s);
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
-		i++;
-	while (s[j] == ' ' || s[j] == '\t' || s[j] == '\n')
-		j--;
-	cpy = (char*)malloc(sizeof(char) * (j - i + 1));
-	if (cpy == 0)
+	if (!s)
 		return (0);
-	while (i < j)
-	{
-		cpy[p] = s[i];
+	j = ft_strlen((char*)s) - 1;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
+	while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
+		j--;
+	if (j < i)
+	{
+		str = (char*)malloc(1);
+		str[0] = 0;
+		return (str);
 	}
-	cpy[p] = '\n';
-	return (cpy);
+	str = (char*)malloc(sizeof(char) * (j - i) + 2);
+	while (p + i <= j)
+	{
+		str[p] = ((char*)s)[p + i];
+		p++;
+	}
+	str[j + 1] = 0;
+	return (str);
 }

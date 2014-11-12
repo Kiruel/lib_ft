@@ -30,11 +30,11 @@ char			*ft_strmap(char const *s, char (*f)(char))
 	int		i;
 	char	*new;
 
+	if (s == 0 && f == 0)
+		return (0);
 	i = 0;
 	new = (char*)malloc(sizeof(char) * ft_strlen((char*)s) + 1);
 	if (new == 0)
-		return (0);
-	if (s == 0 && f == 0)
 		return (0);
 	if (s[0] == '\0')
 		return (0);
