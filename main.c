@@ -216,8 +216,8 @@ int					main(int argc, const char **argv)
 	D_ADD_TEST(strjoin);
 //#define	D_STRSPLIT
 //	D_ADD_TEST(strsplit);
-//#define	D_ITOA
-//	D_ADD_TEST(itoa);
+#define	D_ITOA
+	D_ADD_TEST(itoa);
 #define	D_STRTRIM
 	D_ADD_TEST(strtrim);
 //#define	D_LSTNEW

@@ -6,7 +6,7 @@ int main()
 	int nbr;
 	char *result;
 
-	nbr = 156;
+	nbr = -956;
 	result = ft_itoa(nbr);
 	ft_putstr(result);
 	ft_putchar('\n');

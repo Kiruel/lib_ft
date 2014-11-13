@@ -11,29 +11,52 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
-/*
-valeur d'entree  >>> int = 156
-valeur de sortie >>> char = "156"
-
-afficher >>> 100
--diviser 156 par 10, 2 fois.
-
-
-*/
-char	*ft_itoa(int n)
+static int 	ft_ten_power(int n)
 {
 	int i;
+	int result;
+
+	i = 0;
+	result = 1;
+	while (i < n)
+	{
+		result *= 10;
+		i++;
+	}
+	return (result / 10);
+}
+
+char	*ft_itoa(int n)
+{
+	int c;
+	int i;
+	int p;
 	char *result;
 
 	i = 0;
-	while (i != 0)
+	c = n;
+	while (++i && c != 0)
+		c /= 10;
+	result = (char*)malloc(sizeof(char) * i + (n < 0));
+	result[i - 1] = '\0';
+	p = i - 1;
+	c = p;
+	i = 0;
+	if (n < 0)
 	{
-		n /= 10;
+		result[0] = '-';
+		n = -n;
+		p++;
 		i++;
 	}
-	result = (char*)malloc(sizeof(char) * i + 1);
-	result[i] = '\0';
-	while ()
+	while (i != p)
+	{
+		result[i] = (n / ft_ten_power(c)) + 48;
+		n = n - (n / ft_ten_power(c)) * ft_ten_power(c);
+		c--;
+		i++;
+	}
 	return (result);
 }
