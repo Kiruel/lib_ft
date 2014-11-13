@@ -21,6 +21,7 @@
 # include <strings.h>
 # include <ctype.h>
 
+char	**ft_strsplit(const char *s, char c);
 void	ft_putnbr_fd(int nb, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putchar_fd(char c, int fd);
