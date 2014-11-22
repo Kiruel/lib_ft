@@ -6,7 +6,7 @@
 /*   By: etheodor <etheodor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/07/09 17:51:48 by etheodor          #+#    #+#             */
-/*   Updated: 2014/11/07 17:13:47 by etheodor         ###   ########.fr       */
+/*   Updated: 2014/11/22 11:19:24 by etheodor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_strstr(const char *s1, const char *s2)
 {
 	int i;
-	int j;
 
 	if (!s2 || !*s2 || !s1)
 		return (0);
