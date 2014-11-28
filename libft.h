@@ -14,7 +14,7 @@
 # define LIBFT_H
 # include <string.h>
 
-char	**ft_strsplit(const char *s, char c);
+char	**ft_strsplit(char const *s, char c);
 char	*ft_strtrim(char const *s);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
@@ -38,7 +38,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memalloc(size_t size);
 void	ft_putnbr_fd(int nb, int fd);
-void	ft_putstr_fd(char *str, int fd);
+void	ft_putstr_fd(char const *str, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char const *str, int fd);
 void	ft_putendl(char const *str);
@@ -49,7 +49,7 @@ void	ft_strdel(char **as);
 void	ft_memdel(void **ap);
 void	ft_bzero(void *s, size_t n);
 void	ft_putchar(char c);
-void	ft_putstr(char *str);
+void	ft_putstr(char const *str);
 void	ft_putnbr(int nb);
 void	ft_putnbr(int nb);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
