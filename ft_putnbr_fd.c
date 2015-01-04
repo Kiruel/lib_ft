@@ -21,20 +21,23 @@ void		ft_putnbr_fd(int nb, int fd)
 	{
 		ft_putstr_fd("-2147483648", fd);
 	}
-	if (nb < 0)
+	else 
 	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
-	}
-	if (nb > 9)
-	{
-		unite = nb % 10;
-		dizaine = (nb - unite) / 10;
-		ft_putnbr_fd(dizaine, fd);
-		ft_putnbr_fd(unite, fd);
-	}
-	else
-	{
-		ft_putchar_fd(nb + 48, fd);
+		if (nb < 0)
+		{
+			ft_putchar_fd('-', fd);
+			nb = -nb;
+		}
+		if (nb > 9)
+		{
+			unite = nb % 10;
+			dizaine = (nb - unite) / 10;
+			ft_putnbr_fd(dizaine, fd);
+			ft_putnbr_fd(unite, fd);
+		}
+		else
+		{
+			ft_putchar_fd(nb + 48, fd);
+		}		
 	}
 }
