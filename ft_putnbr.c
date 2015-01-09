@@ -35,6 +35,6 @@ void		ft_putnbr(int nb)
 			ft_putnbr(unite);
 		}
 		else
-			ft_putchar(nb + 48);		
+			ft_putchar(nb + 48);
 	}
 }
